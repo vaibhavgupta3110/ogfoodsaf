@@ -1,14 +1,28 @@
 
 // For RAMPS 1.4
-#define X_STEP_PIN         54
-#define X_DIR_PIN          55
-#define X_ENABLE_PIN       38
-#define X_MIN_PIN           3
-#define X_MAX_PIN           2
-#define X_ENCDR_A          16
-#define X_ENCDR_B          17
-#define X_ENCDR_A_Q        31
-#define X_ENCDR_B_Q        33
+#define E_STEP_PIN         26
+#define E_DIR_PIN          28
+#define E_ENABLE_PIN       24
+
+#define X1_STEP_PIN         54
+#define X1_DIR_PIN          55
+#define X1_ENABLE_PIN       38
+#define X2_STEP_PIN         26
+#define X2_DIR_PIN          28
+#define X2_ENABLE_PIN       24
+#define X1_MIN_PIN           3
+#define X1_MAX_PIN           2
+#define X2_MIN_PIN           3
+#define X2_MAX_PIN           2
+#define X1_ENCDR_A          16
+#define X1_ENCDR_B          17
+#define X1_ENCDR_A_Q        31
+#define X1_ENCDR_B_Q        33
+#define X2_ENCDR_A          16
+#define X2_ENCDR_B          17
+#define X2_ENCDR_A_Q        31
+#define X2_ENCDR_B_Q        33
+
 
 #define Y_STEP_PIN         60
 #define Y_DIR_PIN          61
@@ -29,10 +43,6 @@
 #define Z_ENCDR_B          29
 #define Z_ENCDR_A_Q        39
 #define Z_ENCDR_B_Q        41
-
-#define E_STEP_PIN         26
-#define E_DIR_PIN          28
-#define E_ENABLE_PIN       24
 
 #define SDPOWER            -1
 #define SDSS               53
