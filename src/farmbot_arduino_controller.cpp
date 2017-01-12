@@ -56,23 +56,28 @@ void interrupt(void) {
 void setup() {
 
 	// Setup pin input/output settings
-	pinMode(X_STEP_PIN  , OUTPUT);
-	pinMode(X_DIR_PIN   , OUTPUT);
-	pinMode(X_ENABLE_PIN, OUTPUT);
-	pinMode(X_MIN_PIN   , INPUT );
-	pinMode(X_MAX_PIN   , INPUT );
+	pinMode(X1_STEP_PIN  , OUTPUT);
+	pinMode(X1_DIR_PIN   , OUTPUT);
+	pinMode(X1_ENABLE_PIN, OUTPUT);
+	pinMode(X2_STEP_PIN  , OUTPUT);
+	pinMode(X2_DIR_PIN   , OUTPUT);
+	pinMode(X2_ENABLE_PIN, OUTPUT);
+	pinMode(X1_MIN_PIN   , INPUT_PULLUP);
+	pinMode(X1_MAX_PIN   , INPUT_PULLUP);
+	pinMode(X2_MIN_PIN   , INPUT_PULLUP);
+	pinMode(X2_MAX_PIN   , INPUT_PULLUP);
 
 	pinMode(Y_STEP_PIN  , OUTPUT);
 	pinMode(Y_DIR_PIN   , OUTPUT);
 	pinMode(Y_ENABLE_PIN, OUTPUT);
-	pinMode(Y_MIN_PIN   , INPUT );
-	pinMode(Y_MAX_PIN   , INPUT );
+	pinMode(Y_MIN_PIN   , INPUT_PULLUP);
+	pinMode(Y_MAX_PIN   , INPUT_PULLUP);
 
 	pinMode(Z_STEP_PIN  , OUTPUT);
 	pinMode(Z_DIR_PIN   , OUTPUT);
 	pinMode(Z_ENABLE_PIN, OUTPUT);
-	pinMode(Z_MIN_PIN   , INPUT );
-	pinMode(Z_MAX_PIN   , INPUT );
+	pinMode(Z_MIN_PIN   , INPUT_PULLUP);
+	pinMode(Z_MAX_PIN   , INPUT_PULLUP);
 
 	pinMode(HEATER_0_PIN, OUTPUT);
 	pinMode(HEATER_1_PIN, OUTPUT);
@@ -82,7 +87,8 @@ void setup() {
 	//pinMode(SERVO_0_PIN , OUTPUT);
 	//pinMode(SERVO_1_PIN , OUTPUT);
 
-	digitalWrite(X_ENABLE_PIN, HIGH);
+	digitalWrite(X1_ENABLE_PIN, HIGH);
+	digitalWrite(X2_ENABLE_PIN, HIGH);
 	digitalWrite(Y_ENABLE_PIN, HIGH);
 	digitalWrite(Z_ENABLE_PIN, HIGH);
 
