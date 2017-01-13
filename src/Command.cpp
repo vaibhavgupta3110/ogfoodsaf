@@ -104,13 +104,13 @@ CommandCodeEnum Command::getGCodeEnum(char* code) {
 		return F13;
 	}
 	if (strcmp(code, "F14") == 0) {
-		return F14;
+		return F11;
 	}
 	if (strcmp(code, "F15") == 0) {
-		return F15;
+		return F12;
 	}
 	if (strcmp(code, "F16") == 0) {
-		return F16;
+		return F13;
 	}
 
 	if (strcmp(code, "F20") == 0) {
