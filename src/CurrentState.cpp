@@ -64,8 +64,10 @@ void CurrentState::setEndStopState(unsigned int axis, unsigned int position, boo
 }
 
 void CurrentState::storeEndStops() {
-        CurrentState::getInstance()->setEndStopState(0,0,digitalRead(X_MIN_PIN));
-        CurrentState::getInstance()->setEndStopState(0,1,digitalRead(X_MAX_PIN));
+        CurrentState::getInstance()->setEndStopState(0,0,digitalRead(X1_MIN_PIN));
+        CurrentState::getInstance()->setEndStopState(0,1,digitalRead(X1_MAX_PIN));
+	CurrentState::getInstance()->setEndStopState(0,0,digitalRead(X2_MIN_PIN));
+        CurrentState::getInstance()->setEndStopState(0,1,digitalRead(X2_MAX_PIN));
         CurrentState::getInstance()->setEndStopState(1,0,digitalRead(Y_MIN_PIN));
         CurrentState::getInstance()->setEndStopState(1,1,digitalRead(Y_MAX_PIN));
         CurrentState::getInstance()->setEndStopState(2,0,digitalRead(Z_MIN_PIN));
