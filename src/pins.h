@@ -58,5 +58,5 @@
 #define TEMP_0_PIN         13   // ANALOG NUMBERING
 #define TEMP_1_PIN         14   // ANALOG NUMBERING
 
-#define SERVO_0_PIN	   4
-#define SERVO_1_PIN	   5
+//#define SERVO_0_PIN	   4
+//#define SERVO_1_PIN	   5
